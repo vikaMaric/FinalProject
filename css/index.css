@@ -14,6 +14,16 @@
     rgba(255, 255, 255, 0.02) 104.89%
   );
   --border-color: rgba(255, 255, 255, 0.08);
+  --bg-color-subscribe: linear-gradient(
+    180deg,
+    rgba(254, 254, 255, 0.01) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+  --bg-color-subscribe-form: linear-gradient(
+    180deg,
+    rgba(254, 254, 255, 0.03) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
 }
 
 * {
@@ -540,4 +550,122 @@ body {
 .teamItems .teamItem:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.subscribeContainer {
+  margin: 120px 135px 0 135px;
+  padding: 50px 155px 38px 155px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-radius: 34px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--bg-color-subscribe);
+  -webkit-box-shadow: 0px 22px 18px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 22px 18px 0px rgba(0, 0, 0, 0.05);
+}
+.subscribeContainer .subscribeContainerInfo ul {
+  list-style: none;
+}
+.subscribeContainer .subscribeContainerInfo ul li:first-child {
+  color: var(--text-color-white);
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.subscribeContainer .subscribeContainerInfo ul li:last-child {
+  color: var(--text-color-white);
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+  margin-top: 13px;
+  margin-bottom: 29px;
+}
+.subscribeContainer .subscribeContainerForm {
+  border-radius: 70px;
+  background: var(--bg-color-subscribe-form);
+  -webkit-box-shadow: 10px 24px 54px 0px rgba(0, 0, 0, 0.07);
+          box-shadow: 10px 24px 54px 0px rgba(0, 0, 0, 0.07);
+  padding: 2px 10px;
+}
+.subscribeContainer .subscribeContainerForm ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.subscribeContainer .subscribeContainerForm ul li input {
+  border: none;
+  background: none;
+  padding: 25px 0 25px 44px;
+  width: 200px;
+  color: var(--text-color-white);
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+.subscribeContainer .subscribeContainerForm ul li ::-webkit-input-placeholder {
+  color: var(--text-color-white);
+  opacity: 0.9;
+}
+.subscribeContainer .subscribeContainerForm ul li ::-moz-placeholder {
+  color: var(--text-color-white);
+  opacity: 0.9;
+}
+.subscribeContainer .subscribeContainerForm ul li :-ms-input-placeholder {
+  color: var(--text-color-white);
+  opacity: 0.9;
+}
+.subscribeContainer .subscribeContainerForm ul li ::-ms-input-placeholder {
+  color: var(--text-color-white);
+  opacity: 0.9;
+}
+.subscribeContainer .subscribeContainerForm ul li ::placeholder {
+  color: var(--text-color-white);
+  opacity: 0.9;
+}
+.subscribeContainer .subscribeContainerForm ul li input:focus {
+  outline: none;
+  border: none;
+}
+.subscribeContainer .subscribeContainerForm ul li button {
+  border: none;
+  background: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-radius: 70px;
+  opacity: 0.9;
+  background: var(--button-color);
+  color: var(--text-color-white);
+  text-align: center;
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 150% */
+  padding: 15px 49px;
+}
+.subscribeContainer .subscribeContainerForm ul li button span {
+  padding-left: 8px;
 }

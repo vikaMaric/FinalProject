@@ -12,4 +12,14 @@
     rgba(255, 255, 255, 0.02) 104.89%
   );
     --border-color: rgba(255, 255, 255, 0.08);
+    --bg-color-subscribe: linear-gradient(
+      180deg,
+      rgba(254, 254, 255, 0.01) 0%,
+      rgba(255, 255, 255, 0.02) 100%
+    );
+    --bg-color-subscribe-form: linear-gradient(
+    180deg,
+    rgba(254, 254, 255, 0.03) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
 }
