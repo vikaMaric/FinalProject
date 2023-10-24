@@ -6,11 +6,21 @@
   perspective: 1000px;
 
   .careCustomerImage {
-  transition: transform 0.5s ease;
-  transform-style: preserve-3d;
+    animation: pulseImage 2s infinite;;
  }
- .careCustomerImage:hover {
-  transform: translateZ(-100px);
+ 
+ @keyframes pulseImage {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
  .careCustomerText {

@@ -417,16 +417,36 @@ body {
           perspective: 1000px;
 }
 .careCustomer .careCustomerImage {
-  -webkit-transition: -webkit-transform 0.5s ease;
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  -webkit-animation: pulseImage 2s infinite;
+          animation: pulseImage 2s infinite;
 }
-.careCustomer .careCustomerImage:hover {
-  -webkit-transform: translateZ(-100px);
-          transform: translateZ(-100px);
+@-webkit-keyframes pulseImage {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pulseImage {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 .careCustomer .careCustomerText {
   display: -webkit-box;
@@ -612,7 +632,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.subscribeContainer .subscribeContainerForm ul li input {
+.subscribeContainer .subscribeContainerForm ul li form input {
   border: none;
   background: none;
   padding: 25px 0 25px 44px;
@@ -624,31 +644,31 @@ body {
   font-weight: 400;
   line-height: 30px; /* 166.667% */
 }
-.subscribeContainer .subscribeContainerForm ul li ::-webkit-input-placeholder {
+.subscribeContainer .subscribeContainerForm ul li form ::-webkit-input-placeholder {
   color: var(--text-color-white);
   opacity: 0.9;
 }
-.subscribeContainer .subscribeContainerForm ul li ::-moz-placeholder {
+.subscribeContainer .subscribeContainerForm ul li form ::-moz-placeholder {
   color: var(--text-color-white);
   opacity: 0.9;
 }
-.subscribeContainer .subscribeContainerForm ul li :-ms-input-placeholder {
+.subscribeContainer .subscribeContainerForm ul li form :-ms-input-placeholder {
   color: var(--text-color-white);
   opacity: 0.9;
 }
-.subscribeContainer .subscribeContainerForm ul li ::-ms-input-placeholder {
+.subscribeContainer .subscribeContainerForm ul li form ::-ms-input-placeholder {
   color: var(--text-color-white);
   opacity: 0.9;
 }
-.subscribeContainer .subscribeContainerForm ul li ::placeholder {
+.subscribeContainer .subscribeContainerForm ul li form ::placeholder {
   color: var(--text-color-white);
   opacity: 0.9;
 }
-.subscribeContainer .subscribeContainerForm ul li input:focus {
+.subscribeContainer .subscribeContainerForm ul li form input:focus {
   outline: none;
   border: none;
 }
-.subscribeContainer .subscribeContainerForm ul li button {
+.subscribeContainer .subscribeContainerForm ul li form button {
   border: none;
   background: none;
   -webkit-box-align: center;
@@ -667,7 +687,7 @@ body {
   line-height: 30px; /* 150% */
   padding: 15px 49px;
 }
-.subscribeContainer .subscribeContainerForm ul li button span {
+.subscribeContainer .subscribeContainerForm ul li form button span {
   padding-left: 8px;
 }
 

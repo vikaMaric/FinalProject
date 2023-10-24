@@ -51,6 +51,8 @@
       justify-content: space-between;
 
       li {
+        form{
+
         input {
          border: none;
          background: none;
@@ -73,6 +75,7 @@
           outline: none;
           border: none;
          }
+         
 
         button {
          border: none;
@@ -93,6 +96,7 @@
 
          span {
            padding-left: 8px;
+          }
          }
         }
        }
