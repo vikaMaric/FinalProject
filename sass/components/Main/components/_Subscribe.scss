@@ -93,6 +93,21 @@
          font-weight: 500;
          line-height: 30px; /* 150% */
          padding: 15px 49px;
+         animation: pulseButton 2s infinite;
+
+         @keyframes pulseButton {
+            0% {
+              transform: scale(1);
+             }
+
+            50% {
+              transform: scale(1.05);
+             }
+
+            100% {
+              transform: scale(1);
+             }
+           }
 
          span {
            padding-left: 8px;
