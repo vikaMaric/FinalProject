@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "DMSans";
+  src: url("DMSansFont.ttf") format(truetype);
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("RubikVariableFont.ttf") format(truetype);
+}
