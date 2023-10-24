@@ -1,0 +1,31 @@
+.logo {
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      color: var(--logo-color);
+      font-family: Rubik;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal; 
+
+      li:first-child {
+         animation: rotate 2s linear;
+       }
+
+      @keyframes rotate {
+         0% {
+            transform: rotate(0deg);
+         }
+
+         100% {
+            transform: rotate(360deg);
+         }
+       }
+
+       li:last-child {
+         padding-left: 10px;
+       }
+    }
+}

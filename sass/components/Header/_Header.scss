@@ -1,0 +1,10 @@
+@import "./components/Logo";
+@import "./components/NavigationMenu";
+
+
+.headerNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px 135px;
+}
