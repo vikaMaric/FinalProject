@@ -1,0 +1,32 @@
+.termsContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 33px 134px;
+
+   div:first-child {
+     color: var(--text-color-footer);
+     font-family: Rubik;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 14px; /* 100% */
+     }
+
+  .termsContainerOptions {
+
+    ul {
+     list-style: none;
+     display: flex;  
+
+     li {
+       padding-left: 54px;
+       color: var(--text-color-footer);
+       font-family: DM Sans;
+       font-size: 14px;
+       font-style: normal;
+       font-weight: 400;
+       line-height: 14px; /* 100% */
+     }
+    }
+  }
+}
