@@ -965,6 +965,30 @@ body {
 .footerContainer .footerContainerResources ul {
   list-style: none;
 }
+.footerContainer .footerContainerService ul li,
+.footerContainer .footerContainerCompany ul li,
+.footerContainer .footerContainerSupports ul li,
+.footerContainer .footerContainerResources ul li {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.footerContainer .footerContainerService ul li:hover,
+.footerContainer .footerContainerCompany ul li:hover,
+.footerContainer .footerContainerSupports ul li:hover,
+.footerContainer .footerContainerResources ul li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+.footerContainer .footerContainerService ul li:first-child:hover,
+.footerContainer .footerContainerCompany ul li:first-child:hover,
+.footerContainer .footerContainerSupports ul li:first-child:hover,
+.footerContainer .footerContainerResources ul li:first-child:hover {
+  -webkit-transform: none;
+          transform: none;
+}
 
 .termsContainer {
   display: -webkit-box;
