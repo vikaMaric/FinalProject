@@ -1,0 +1,139 @@
+.contactUsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10px 135px;
+
+  .contactUsInfo {
+    width: 450px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+
+    div:first-child {
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+      font-family: DM Sans;
+      font-size: 38px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 84px; /* 144.828% */
+      letter-spacing: 1.16px;
+      color: var(--text-color-white);
+      }
+
+    div:nth-child(2) {
+      color: var(--text-color-white);
+      font-family: DM Sans;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 30px; /* 200% */
+      text-transform: uppercase;
+      margin-top: 30px;
+      }
+
+    .partners {
+      position: absolute;
+      animation: move 10s linear infinite;
+      margin-top: 30px;
+
+      ul {
+        list-style: none;
+        display: flex;
+
+        li {
+         padding: 10px 20px;
+         }
+        }
+      }
+
+    @keyframes move {
+       0% {
+         left: 100%;
+        }
+
+        100% {
+         left: -100%;
+        }
+      }
+    }
+
+    .contactUsForm {
+      background-color: rgba(235, 233, 242, 0.988);
+      border: 1px solid rgba(248, 246, 246, 0.126);
+      box-shadow: #7f5cde #d946ef;
+      border-radius: 30px;
+      padding: 40px 30px;
+
+      p {
+       font-size: 30px;
+       font-family: DM Sans;
+       }
+
+      ul {
+       list-style: none;
+       margin-top: 30px;
+
+       li {
+        margin-bottom: 20px;
+
+        form {
+         display: flex;
+         text-align: center;
+         align-items: center;
+         border: 1px solid rgba(0, 0, 0, 0.177);
+         border-radius: 5px;
+         padding: 10px 15px;
+
+         input {
+          margin-left: 10px;
+          border: none;
+          background: none;
+          font-size: 17px;
+          }
+
+          ::placeholder {
+            color: var(--placeholder-text-color);
+            font-family: DM Sans;
+           }
+
+         select {
+          border: none;
+          background: none;
+          font-size: 17px;
+          font-family: DM Sans;
+          color:var(--placeholder-text-color) ;
+          width: 100%;
+          }
+
+         textarea {
+          border: none;
+          background: none;
+          width: 100%;
+          }
+          }
+         }
+
+         li:last-child {
+
+            form {
+              background: var(--button-color);
+              justify-content: center;
+              border: none;
+              padding: 20px 0;  
+
+              input {
+               font-weight: 500;
+               font-size: larger;
+               font-family: DM Sans;
+               justify-content: center;
+               color: var(--text-color-white);
+              }
+         }
+       }
+
+       form *:focus {
+        outline: none;
+        }
+      }
+   }
+}
