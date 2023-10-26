@@ -68,3 +68,58 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+
+  .footerContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px 10px;
+    padding: 10px 50px;
+    margin: 10px;
+
+    .footerContainerInfo {
+      grid-column: 1/5;
+      font-size: 14px;
+      line-height: 22px;
+      justify-self: center;
+    }
+  }
+
+  .footerContainerService,
+  .footerContainerCompany,
+  .footerContainerSupports,
+  .footerContainerResources {
+
+    justify-self: center;
+
+    ul {
+
+      li {
+        font-size: 14px;
+        line-height: 25px;
+      }
+    }  
+  }
+}
+
+@media screen and (max-width: 390px) {
+
+  .footerContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 20px;
+    padding: 10px 20px;
+
+    .footerContainerInfo {
+      display: none;
+    }
+
+    .footerContainerService,
+    .footerContainerCompany,
+    .footerContainerSupports,
+    .footerContainerResources {
+      justify-self: end;
+    }
+  }
+}

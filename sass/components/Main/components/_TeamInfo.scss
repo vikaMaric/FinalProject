@@ -20,3 +20,36 @@
     line-height: normal;
    }
 }
+
+@media screen and (max-width: 1200px) {
+
+  .teamInfo {
+    padding: 10px 100px;
+
+    p:first-child {
+      font-size: 32px;
+    }
+
+    p:last-child {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+
+  .teamInfo {
+    padding: 10px 20px;
+    margin-top: -90px;
+
+    p:first-child {
+      font-size: 28px;
+    }
+
+    p:last-child {
+      font-size: 14px;
+      
+      margin-top: -20px;
+    }
+  }
+}

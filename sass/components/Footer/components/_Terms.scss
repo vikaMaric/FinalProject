@@ -36,3 +36,23 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+
+  .termsContainer {
+    padding: 10px 50px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+
+  .termsContainer {
+    padding: 10px 20px;
+    justify-content: center;
+
+    .termsContainerOptions {
+      display: none;
+    }
+  }
+
+}

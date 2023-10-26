@@ -31,3 +31,45 @@
     }
 }
 }
+
+@media screen and (max-width: 1200px) {
+    .menuList {
+        ul {
+            li {
+                padding: 10px 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .menuList {
+        ul {
+            li:nth-child(2) {
+                display: none;
+            }
+
+            li:nth-child(3) {
+                display: none;
+            }
+
+            li:nth-child(4) {
+                display: none;
+            }
+
+            li:nth-child(5) {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .menuList {
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

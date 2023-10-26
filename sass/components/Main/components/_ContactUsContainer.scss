@@ -137,3 +137,53 @@
       }
    }
 }
+
+@media screen and (max-width: 1200px) {
+  .contactUsContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 130px;
+
+    .contactUsForm {
+      margin-top: -290px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contactUsContainer {
+    padding: 20px 50px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+
+  .contactUsContainer {
+    padding: 20px 20px;
+
+    .contactUsInfo {
+      width: 250px;
+
+      div:first-child {
+        font-size: 28px;
+        margin-top: -10px;
+      }
+
+      div:nth-child(2) {
+        font-size: 14px;
+        margin-top: -20px;
+      }
+    }
+
+    .contactUsForm {
+     margin-top: -380px;
+     padding: 15px 20px;
+     width: 300px;
+     
+
+     p {
+      font-size: 20px;
+     }
+    }
+  }
+}

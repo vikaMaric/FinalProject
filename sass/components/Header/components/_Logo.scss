@@ -29,3 +29,13 @@
        }
     }
 }
+
+@media screen and (max-width: 1200px) {
+   .logo {
+      ul {
+         li:last-child {
+            padding: 8px;
+         }
+      }
+   }
+}

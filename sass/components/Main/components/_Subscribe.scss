@@ -118,3 +118,54 @@
       }
     }
 }
+
+@media screen and (max-width: 1200px) {
+  
+  .subscribeContainer {
+    margin: 50px 100px;
+    padding: 30px 100px;
+
+    .subscribeContainerInfo {
+
+      ul {
+
+        li:first-child {
+          font-size: 32px;
+        }
+
+        li:last-child {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .subscribeContainerForm {
+      padding: 1px 5px;
+
+      ul {
+
+        li {
+
+          form {
+
+            input {
+              font-size: 14px;
+              padding: 5px 30px;
+            }
+
+            button {
+              font-size: 14px;
+              padding: 10px 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .subscribeContainer {
+    display: none;
+  }
+}

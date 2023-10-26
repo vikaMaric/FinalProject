@@ -8,3 +8,15 @@
   align-items: center;
   padding: 48px 135px;
 }
+
+@media screen and (max-width: 1200px) {
+  .headerNav{
+    padding: 50px 100px;}
+}
+
+@media screen and (max-width: 390px) {
+  .headerNav {
+    padding: 20px 50px;
+  }
+
+}

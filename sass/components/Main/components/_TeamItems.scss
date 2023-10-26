@@ -63,3 +63,37 @@
   transform: scale(1.1);
   }
 }
+
+@media screen and (max-width: 1200px) {
+
+  .teamItems {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 100px;
+    gap: 20px 30px;
+
+    .teamItem {
+      padding: 10px 20px;
+
+      ul {
+        
+        li:nth-child(2) {
+          font-size: 22px;
+        }
+
+        li:nth-child(3) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+
+  .teamItems {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 20px;
+  }
+}
