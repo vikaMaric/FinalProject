@@ -103,6 +103,13 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+
+  .footerContainer {
+    padding: 10px 30px;
+  }
+}
+
 @media screen and (max-width: 390px) {
 
   .footerContainer {

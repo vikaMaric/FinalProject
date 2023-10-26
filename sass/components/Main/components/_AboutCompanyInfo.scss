@@ -153,6 +153,32 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .aboutInfo {
+
+    padding: 0 30px;
+
+    .leftInfo {
+
+      .aboutInfoBig {
+        font-size: 35px;
+        line-height: 45px;
+      }
+    }
+
+    .imageInfo {
+
+      left: 50px;
+      top: 150px;
+
+      img {
+        width: 450px;
+      }
+    }
+  }
+
+}
+
 @media screen and (max-width: 390px) {
 
   .aboutInfo {
